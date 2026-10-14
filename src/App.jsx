@@ -10,10 +10,11 @@ import Footer from "./components/Footer";
 
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
+import NewPost from "./pages/NewPost";
 
 import "./App.css";
 
-// Displays the existing P3 home page.
+// Retain the existing DEV@Deakin home page.
 function Home() {
   return (
     <main>
@@ -25,7 +26,6 @@ function Home() {
   );
 }
 
-// Keeps the navigation and footer consistent across pages.
 function App() {
   return (
     <BrowserRouter>
@@ -33,6 +33,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/post" element={<NewPost />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
       </Routes>

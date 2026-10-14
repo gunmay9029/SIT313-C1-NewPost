@@ -1,3 +1,4 @@
+
 import { Link, useNavigate } from "react-router-dom";
 
 function Navbar() {
@@ -25,9 +26,7 @@ function Navbar() {
       </Link>
 
       <ul className="nav-links">
-        <li>
-          <Link to="/">Home</Link>
-        </li>
+        <li><Link to="/">Home</Link></li>
         <li>
           <button type="button" className="nav-placeholder" onClick={() => goToSection("about")}>
             About
@@ -58,12 +57,9 @@ function Navbar() {
             Daily Insider
           </button>
         </li>
-        <li>
-          <Link to="/login">Login</Link>
-        </li>
-        <li>
-          <Link to="/signup">Sign up</Link>
-        </li>
+        <li><Link to="/post">Post</Link></li>
+        <li><Link to="/login">Login</Link></li>
+        <li><Link to="/signup">Sign up</Link></li>
       </ul>
     </nav>
   );
